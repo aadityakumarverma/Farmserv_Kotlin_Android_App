@@ -6,4 +6,22 @@
     android:layout_height="match_parent"
     tools:context=".UserLogin">
 
+    <LinearLayout
+        android:id="@+id/linearLayoutLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toLeftOf="parent"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your name"/>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
