@@ -1,19 +1,26 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'kotlin-android'
+    id 'kotlin-android-extensions'
+
 }
 
 android {
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.example.farmserv"
         minSdk 21
-        targetSdk 32
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildFeatures{
+        viewBinding true
+        dataBinding true
     }
 
     buildTypes {
@@ -40,4 +47,14 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation 'com.intuit.sdp:sdp-android:1.1.0'
+    // circle Indicator
+    implementation 'me.relex:circleindicator:2.1.6'
+
+    // image slider
+    implementation 'com.github.denzcoskun:ImageSlideshow:0.1.0'
+    implementation("com.tbuonomo:dotsindicator:4.3")
+    implementation("com.tbuonomo:dotsindicator:4.3")
+    implementation 'com.google.android.material:material:1.4.0'
+
 }

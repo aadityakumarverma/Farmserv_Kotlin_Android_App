@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:id="@+id/rb_listView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@android:color/transparent"
+            android:checked="true"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:background="@drawable/selector_list"
+            />
+        <RadioButton
+            android:id="@+id/rb_gridView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@android:color/transparent"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:background="@drawable/selector_grid"
+            />
+    </RadioGroup>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_nutrition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        >
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

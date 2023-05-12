@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">FarmServ</string>
+    <string name="let_s_start">Let\'s Start</string>
+    <string name="welcome_message">Welcome to FarmServ.Please type your mobile number</string>
+    <string name="hint_phone"><font size="12">Type your mobile number</font></string>
+    <string name="otp_message">Enter the 4 digit sent to:</string>
+    <string name="sent_message">We’ve sent a 4 digit code to your phone number please enter the verification</string>
+    <string name="didn_t_receive_the_sms">Didn’t receive the SMS?</string>
+    <string name="request_new_code_in_">Request new code in </string>
+    <string name="i_m_a_farmer">i’m a Farmer</string>
+    <string name="i_m_a_delivery_patner">i’m a delivery patner</string>
+    <string name="your_primary_address">Your Primary Address</string>
+    <string name="please_add_your_address">Please add your address</string>
+    <string name="taluka_block">Taluka/Block</string>
+    <string name="_3_buyers_intrested_in_your_crop">3 buyers intrested in your crop</string>
+    <string name="find_your_products_message">Find your products which you wanted to \npurchase for your farmer!</string>
+    <string name="price_npk">Rs.1750 <font color="#919191"><strike>(Rs.2000)</strike></font></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="please_set_your_location_to_help_you_better">Please set your location to help you better</string>
+    <string name="set_now">Set Now</string>
+    <string name="terms_of_service">I agree to <font color="#15992E"><span id="aa">Terms of Service</span></font> &amp; <font color="#15992E"> Privacy Policy</font> and share my location</string>
+    <string name="pincode_hint">Type your pincode</string>
+    <string name="setLanguageMsg">You can set your preferred language. You can \nchange it whenever you want</string>
+
+
 </resources>

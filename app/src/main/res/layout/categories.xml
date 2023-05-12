@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_logo"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:backgroundTint="@color/blue_action_bar"
+        >
+        <ImageView
+            android:id="@+id/iv_backButtonCategory"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_back"/>
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/leaves"/>
+    </androidx.cardview.widget.CardView>
+    <TextView
+
+        android:id="@+id/tv_categories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Categories"
+        android:textStyle="bold"
+        android:fontFamily="@font/roboto_bold"
+        android:textSize="@dimen/_16sdp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_15sdp"
+        app:layout_constraintTop_toBottomOf="@+id/cv_logo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_categories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_2sdp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_categories"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/appBarLayout"
+        >
+
+
+                <ImageView
+                    android:id="@+id/iv_seedsIcon"
+                    android:layout_weight="1"
+                    android:src="@drawable/seed_icon"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@drawable/category_bg"
+                    android:scaleType="centerInside"
+                    android:layout_gravity="center"/>
+
+
+
+                <ImageView
+                    android:id="@+id/iv_protectionIcon"
+                    android:layout_weight="1"
+                    android:src="@drawable/protection_icon"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:scaleType="centerInside"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:background="@drawable/category_bg"
+                    android:layout_gravity="center"/>
+
+
+
+                <ImageView
+                    android:id="@+id/iv_nutritionIcon"
+                    android:layout_weight="1"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:background="@drawable/category_bg"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/nutrition_icon" />
+
+
+
+        <ImageView
+            android:id="@+id/iv_othersIcon"
+            android:layout_weight="1"
+            android:src="@drawable/others_icon"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:scaleType="centerInside"
+            android:padding="@dimen/_5sdp"
+            android:background="@drawable/category_bg"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:outlineAmbientShadowColor="@color/white"
+        android:outlineSpotShadowColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/viewPager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_categories">
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabIndicatorColor="@color/green_button"
+            app:tabIndicatorFullWidth="true"
+            app:tabIndicatorHeight="@dimen/_2sdp"
+            app:tabBackground="@color/white"
+            app:tabGravity="fill"
+            app:tabMode="fixed"
+            app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
+            app:tabSelectedTextColor="@color/green_button"
+            app:tabTextColor="@android:color/black"
+            />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout">
+
+
+    </androidx.viewpager.widget.ViewPager>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
